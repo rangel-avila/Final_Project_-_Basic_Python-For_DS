@@ -1,0 +1,15 @@
+lista_divisores = []
+
+num_teste = int(input('Digite um número inteiro maior do que 0: '))
+
+for i in range(1,num_teste+1):
+  resto = num_teste % i
+  if resto == 0:
+    print(f'{i} é um divisor de {num_teste}')
+    lista_divisores.append(i)
+
+if len(lista_divisores) <= 2:
+  print(f'{num_teste} é um número primo')
+else:
+  print(f'{num_teste} não é um número primo, e a sua lista de divisores é {lista_divisores}')
+
