@@ -1,0 +1,10 @@
+dicionario = {'Produto A': 300, 'Produto B': 80, 'Produto C': 60,
+ 'Produto D': 200, 'Produto E': 250, 'Produto F': 30}
+venda_total = 0
+for i in dicionario.keys():
+  venda_total = venda_total + dicionario[i]
+  
+max_value = max(dicionario.values())
+max_key = max(dicionario, key=dicionario.get)
+
+print(f'A soma de todas as vendas é {venda_total}, e o produto mais vendido é o {max_key}, com {max_value}')
